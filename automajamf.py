@@ -18,7 +18,11 @@ This script is used to automate the process of testing and deploying a policy on
 
 ## IMPORT
 import os
+import dotenv
+import requests
 
+
+## FUNCTIONS
 def check_parallel_exists():
     
     '''Check if a file exists.'''
@@ -36,4 +40,9 @@ def check_jamf_install():
     
     return False
 
+
+def check_policy_exists():
+    
+    '''Check if the policy exists.'''
+    pass
 

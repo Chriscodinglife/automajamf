@@ -19,6 +19,8 @@ This script is for unit testing the automajamf.py script.
 import unittest
 import automajamf
 
+
+#FUNCTIONS
 class test_automajamf(unittest.TestCase):
     
     '''Run several tests to ensure quality of automajamf'''
