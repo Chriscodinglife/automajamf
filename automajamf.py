@@ -18,8 +18,16 @@ This script is used to automate the process of testing and deploying a policy on
 
 ## IMPORT
 import os
-import dotenv
+import json
 import requests
+from dotenv import load_dotenv
+
+load_dotenv()
+
+
+## VARIABLES
+jss_user = os.getenv('JSS_USER')
+jss_pass = os.getenv('JSS_PASS')
 
 
 ## FUNCTIONS
@@ -45,4 +53,3 @@ def check_policy_exists():
     
     '''Check if the policy exists.'''
     pass
-
