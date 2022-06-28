@@ -26,3 +26,14 @@ def check_parallel_exists():
         return True
     
     return False
+
+
+def check_jamf_install():
+    
+    '''Check if the jamf binary is installed locally.'''
+    if os.path.isfile('/usr/local/bin/jamf'):
+        return True
+    
+    return False
+
+
